@@ -1,13 +1,13 @@
 body {
-    height: 8000px;
+    perspective: 800px;
 }
 @font-face {
     font-family: 'icomoon';
-    src:  url('../fonts/icomoon.eot?llgclb');
-    src:  url('../fonts/icomoon.eot?llgclb#iefix') format('embedded-opentype'),
-      url('../fonts/icomoon.ttf?llgclb') format('truetype'),
-      url('../fonts/icomoon.woff?llgclb') format('woff'),
-      url('../fonts/icomoon.svg?llgclb#icomoon') format('svg');
+    src:  url('../../fonts/icomoon.eot?llgclb');
+    src:  url('../../fonts/icomoon.eot?llgclb#iefix') format('embedded-opentype'),
+      url('../../fonts/icomoon.ttf?llgclb') format('truetype'),
+      url('../../fonts/icomoon.woff?llgclb') format('woff'),
+      url('../../fonts/icomoon.svg?llgclb#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -274,6 +274,7 @@ a {
 .head-last-bar {
     position: relative;
     margin-top: 20px;
+    margin-bottom: 20px;
     width: 1226px;
     height: 170px;
 }
@@ -333,7 +334,6 @@ a {
 }
 .middle-bar {
     width: 100%;
-    height: 6035px;
     background-color: #F5F5F5;
 }
 .shangou {
@@ -347,6 +347,7 @@ a {
 }
 .miaosha {
     width: 1226px;
+    height: 339px;
 }
 .miaosha ul li:first-child {
     position: relative;
@@ -382,7 +383,7 @@ a {
     top: 240px;
     left: 30px;
 }
-.miaosha ul li .save-time span {
+.miaosha ul li .save-time div {
     display: inline-block;
     width: 46px;
     height: 46px;
@@ -416,6 +417,354 @@ a {
 .miaosha ul li a img:hover {
     transform: scale(1.1);
 }
-.miaosha ul li a img:last-child:hover {
-    transform: translateY(-10px);
+.xiaomiTenth {
+    width: 1226px;
+    height: 120px;
+    margin: 40px auto;
+}
+.xiaomiTenth a img {
+    width: 1226px;
+    height: 120px;
+}
+.xiaomiMTitle {
+    width: 1226px;
+    height: 57.6px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+.xiaomiMTitle h1 {
+    font-size: 22px;
+    font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    float: left;
+    font-weight: normal;
+    line-height: 57.6px;
+    text-align: center;
+    margin-left: 15px;
+}
+.xiaomiMTitle h3 {
+    font-size: 16px;
+    font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    float: right;
+    font-weight: normal;
+    line-height: 57.6px;
+    text-align: center;
+    margin-right: 30px;
+}
+.xiaomiMobles {
+    width: 1226px;
+    height: 614px;
+    margin: 0 auto;
+}
+.xiaomiMobles .xiaomi-left {
+    width: 234px;
+    height: 614px;
+    float: left;
+}
+
+.xiaomiMobles .xiaomi-left a img {
+    width: 234px;
+    height: 614px;
+    transition: all .3s;
+}
+.xiaomiMobles .xiaomi-left a img:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 2px rgba(0,0 ,0, .3);
+}
+.xiaomiMobles .xiaomi-right ul li {
+    overflow: hidden;
+    background-color: #fff;
+    float: left;
+    position: relative;
+    margin-left: 14px;
+    width: 234px;
+    height: 300px;
+    transition: all .2s;
+}
+.xiaomiMobles .xiaomi-right ul li:nth-child(-n + 4){
+    margin-bottom: 14px;
+}
+.xiaomiMobles .xiaomi-right ul li:hover {
+    transform: translateY(-3px);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0,0 ,0, .1);
+}
+.xiaomiMobles .xiaomi-right ul li a img {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.xiaomiMobles .xiaomi-right ul li h3 {
+    position: absolute;
+    height: 20.8px;
+    width: 100%;
+    top: 190px;
+    left: 0;
+    line-height: 20.8px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.xiaomiMobles .xiaomi-right ul li p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 215px;
+    left: 0;
+    width: 100%; 
+    height: 18px;
+    font-size: 12px;
+    color: #B0B0B0;
+    line-height: 18px;
+    text-align: center;
+}
+.xiaomiMobles .xiaomi-right ul li span {
+    position: absolute;
+    top: 243px;
+    left: 0;
+    line-height: 18px;
+    height: 18px;
+    width: 100%;
+    text-align: center;
+    color: #FF6700;
+    font-size: 14PX;
+}
+.xiaomijiadian {
+    width: 1226px;
+    height: 120px;
+    margin: 20px auto;
+}
+.xiaomijiadian a img {
+    width: 1226px;
+    height: 120px;
+}
+.xiaomiJD {
+    width: 1226px;
+    height: 57.6px;
+    margin: 20px auto;
+    margin-bottom: 0;
+}
+.xiaomiJD h1 {
+    font-size: 22px;
+    font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    float: left;
+    font-weight: normal;
+    line-height: 57.6px;
+    text-align: center;
+    margin-left: 15px;
+}
+.xiaomiJD h3 {
+    border-bottom: 1px solid orangered;
+    font-size: 16px;
+    font-family: Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    float: right;
+    font-weight: normal;
+    line-height: 57.6px;
+    text-align: center;
+    margin-right: 30px;
+}
+.xiaomidianshi {
+    width: 1226px;
+    margin: 15px auto;
+    height: 650px;
+}
+.xiaomidianshi ul li a img {
+    transition:all .2s;
+    width: 234px;
+    height: 300px;
+}
+.xiaomidianshi ul li {
+    overflow: hidden;
+    float: left;
+    width: 234px;
+    height: 300px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+}
+.xiaomidianshi ul li:nth-child(5n){
+    margin-right: 0;
+}
+.xiaomidianshi ul li a img:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0,0 ,0, .1);
+}
+.footer {
+    position: relative;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 1226px;
+    height: 350px;
+}
+.footer .userRight {
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 80px;
+   width: 100%;
+   border-bottom: 1px solid #999 ;
+}
+.footer .userRight ul li {
+    float: left;
+}
+.footer .userRight ul li:nth-child(odd) {
+    /* width: 241px; */
+    height: 100%;
+}
+.footer .userRight ul li:nth-child(odd) span {
+    font-size: 16px;
+    padding-left: 30px;
+    line-height: 80px;
+    text-align:center;
+    content: '';
+    font-family: 'icomoon';
+}
+/* .footer .userRight ul li span::before {
+    color: #ccc;
+    content: '';
+    font-family: 'icomoon';
+    margin-right: 8px;
+} */
+.footer .userRight ul li:nth-child(odd) span:hover {
+    cursor: pointer;
+    color: orangered;
+}
+.footer .userRight ul li:nth-child(even) {
+    display: inline-block;
+    cursor:   no-drop  ;
+    margin: 34px 57px;
+    width: 1px;
+    height: 16px;
+    background-color: #424242;
+}
+.footer-help {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    margin: 0 auto;
+    width: 1226px;
+    height: 249.8px;
+}
+.footer-help .help-left {
+    float: left;
+}
+.footer-help .help-right {
+    float: right;
+}
+.footer-help .help-left dl {
+    float: left;
+    width: 160px;
+    margin: 40px 0;
+}
+.footer-help .help-left dl dt {
+    color: #424242;
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+.footer-help .help-left dl dd {
+    height: 27.6px;
+    font-size: 12px;
+    color: #757575;
+}
+.footer-help .help-left dl dd:hover {
+    cursor: progress;
+       color: #FF6700;
+}
+.footer-help .help-right {
+    width: 226px;
+    height: 110.2px;
+    margin-top: 40px;
+    border-left: 1px solid #ccc;
+}
+.footer-help .help-right h3 {
+    height: 21.6px;
+    line-height: 21.6px;
+    color: #Ff6700;
+    text-align: center;
+    width: 100%;
+}
+.footer-help .help-right p {
+    height: 17.6px;
+    color: #767676;
+    font-size: 12px;
+    text-align: center;
+}
+.footer-help .help-right a {
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    color: #FF6700;
+    margin-left: 55px;
+    text-align: center;
+    border: 1px solid #FF6700;
+}
+.footer-help .help-right h4 {
+    text-align: center;
+    margin-top: 5px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 12px;
+    color: #666;
+}
+.footer-info {
+    position: absolute;
+    left: 0;
+    top: 350px;
+    margin: 0 auto;
+    width: 1226px;
+    height: 500px;
+    background-color: #FAFAFA;
+}
+.footer-info .help-info {
+    width: 1226px;
+    height: 88.8px;
+}
+.footer-info .help-info .logos {
+    float: left;
+    width: 72px;
+    height: 100%;
+}
+.footer-info .help-info .info-rights {
+    float: left;
+}
+.footer-info .help-info .info-rights p {
+    line-height: 18px;
+    font-size: 12px;
+    color: #B0B0B0;
+}
+.footer-info .help-info .info-rights p:first-child {
+    color: #757575;
+}
+.footer-info .footer-logo-imgs {
+    width: 1226px;
+    height: 40px;
+}
+.footer-info .footer-logo-imgs ul li {
+    float: left;
+}
+.footer-info .footer-logo-imgs ul {
+    margin-left: 72px;
+}
+.footer-info .footer-logo-imgs ul li:nth-child(-n + 4) a img {
+    width: 83px;
+    height: 28px;
+    margin-top: 6px;
+}
+.footer-info .footer-logo-imgs ul li:last-child a img {
+    height: 40px;
+    width: 105px;
+}
+.footer-info .footer-miTimes {
+    margin-top: 10px;
+    margin-left: 403px;
+} 
+.footer-info .footer-miTimes p {
+    color: #333;
+    font-size: 20px;
+    font-family: Georgia;
 }

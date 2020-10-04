@@ -5,6 +5,13 @@ window.addEventListener('load',function(){
     let ul = swiper.querySelector('.list-imgs').querySelector('ul')
     let ol = swiper.querySelector('ol')
     let lis = ul.querySelectorAll('li')
+    var middle = document.querySelector('.middle-bar').querySelector('.miaosha').querySelector('ul').querySelector('li:first-child')
+    var saveTime = middle.querySelector('.save-time')
+    var hours = saveTime.querySelector('.timeHours')
+    var mintes = saveTime.querySelector('.timeMintes')
+    var secs = saveTime.querySelector('.timeSecs')
+    // var mintes = middle.querySelector('.save-time div:nth-child(1)')
+    // var secs = middle.querySelector('.save-time div:nth-child(2)')
     let num = 0
     let cicle = 0
     let offWidth = swiper.offsetWidth
@@ -88,6 +95,22 @@ window.addEventListener('load',function(){
             })
         }
 })
+    var thatTime = +new Date('2020-10-05 14:00:00')
+
+    getData()
+    setInterval(getData,1000)
     ol.children[0].className = 'curret'
-   
+     function getData(){
+         var nowDate =  +new Date()
+         var finaData = (thatTime - nowDate) / 1000
+         var h = parseInt(finaData / 60 / 60 % 24)
+         h = h < 10 ? '0' + h : h 
+         hours.innerHTML = h
+         var m = parseInt(finaData / 60 % 60)
+         m = m < 10 ? '0' + m : m 
+         mintes.innerHTML = m
+         var s = parseInt(finaData % 60)
+         s = s < 10 ? '0' + s : s 
+         secs.innerHTML = s
+        }
 })
