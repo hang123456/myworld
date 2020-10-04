@@ -56,7 +56,7 @@ window.addEventListener('load',function(){
     right.addEventListener('click',function(){
            if(flag){
                flag = false
-            if(num > ul.children.length - 1 ){
+            if(num == ul.children.length - 1 ){
                 ul.style.left = 0
                 num = 0
             }
